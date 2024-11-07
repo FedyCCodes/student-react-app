@@ -7,7 +7,6 @@ import ReactDOM, { createRoot } from "react-dom/client";
 import { RouterProvider } from 'react-router-dom'
 import router from './router.jsx'
 import './index.css'
-import './old/App.css'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
