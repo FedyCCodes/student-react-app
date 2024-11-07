@@ -20,7 +20,7 @@ export function ClassList() {
       try {
         
         // let url = "https://json.link/oJbmHxLn8f.json";
-        const url = "http://localhost:3000/students"
+        const url = `${import.meta.env.VITE_API_URL}/students`
         
         let res = await fetch(url);
         // gets the result

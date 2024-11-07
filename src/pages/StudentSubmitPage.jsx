@@ -8,7 +8,7 @@ async function addNewStudent(student) {
   
   // student.sId = Math.floor(Math.random() * 0xffffff).toString().padStart('0', 8)
   
-  await fetch('http://localhost:3000/students', {
+  await fetch(`${import.meta.env.VITE_API_URL}/students`, {
     method: "POST",
     headers: {
       'Content-Type': 'application/json',
