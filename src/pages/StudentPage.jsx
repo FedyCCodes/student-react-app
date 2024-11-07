@@ -6,7 +6,7 @@ async function fetchStudentData(id) {
   
   try {
     
-    const response = await fetch(`${import.meta.env.VITE_API_URL}/students` + id);
+    const response = await fetch(`${import.meta.env.VITE_API_URL}/students/` + id);
     // gets the student data
     
     const data = await response.json();
